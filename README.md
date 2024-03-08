@@ -1,1 +1,2 @@
-# KyushuUniversityBeamerTemplate
+# Kyushu University Beamer Template
+

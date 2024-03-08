@@ -1,0 +1,77 @@
+% KYUSHU UNIVERSITY beamer template
+% Created by Yu in 2024
+
+\documentclass[11pt]{beamer}
+% You can use \documentclass[11pt,aspectratio=169]{beamer} 
+% to adjust the aspect ratio to 16:9.
+
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[
+	backend=biber,
+	style=verbose,
+	sorting=ynt
+]{biblatex}
+
+\addbibresource{references.bib}
+
+\usetheme{Madrid}
+
+\author[Presenter]{Presenter}
+\title[Short title]{Presentation title}
+
+\setbeamertemplate{navigation symbols}{}
+\titlegraphic{\includegraphics[width=3cm]{resources/KU_en.png}}
+
+% Uncomment the section below to show a table of contents slide every time a new section starts
+% \AtBeginSection[]
+% {
+%  \begin{frame}<beamer>
+%  \frametitle{Table of contents}
+%  \tableofcontents[currentsection]
+%  \end{frame}
+% }
+
+\usepackage{Kyushu}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section{Example}
+
+\begin{frame}{Example slide 1}
+We compute the matrix of outputs as\footnote{\cite{vaswaniAttentionAllYou2023}}:
+$$
+	\mathrm{Attention}(Q, K, V) = \mathrm{softmax}(\frac{QK^T}{\sqrt{d_k}})V
+$$
+\end{frame}
+
+\begin{frame}{Example slide 2}
+	\begin{table}
+	  \centering
+	  \begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Header 1} & \textbf{Header 2} & \textbf{Header 3} \\
+		\hline
+		Cell 1-1 & Cell 1-2 & Cell 1-3 \\
+		\hline
+		Cell 2-1 & Cell 2-2 & Cell 2-3 \\
+		\hline
+		Cell 3-1 & Cell 3-2 & Cell 3-3 \\
+		\hline
+	  \end{tabular}
+	  \caption{A Simple Table}
+	\end{table}
+\end{frame}
+
+\section{Bibliography}
+
+\begin{frame}[t,allowframebreaks]
+\frametitle{Bibliography}
+\printbibliography
+\end{frame}
+
+\end{document}
