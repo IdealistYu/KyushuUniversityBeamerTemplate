@@ -12,7 +12,7 @@ A Beamer template suitable for presentation at Kyushu University seminar. In add
 
 ## How to Use
 
-1. Clone the project. Then use your local $\LaTeX$ compiler to compile the .tex file.
+1. Clone the repository. Then use your local $\LaTeX$ compiler to compile the .tex file.
 2. Alternatively, click [here](https://www.overleaf.com/latex/templates/kyushu-university-beamer-template/grrtfbmkttfd) to use this template directly in Overleaf.
 
 ※ Note that when using versions that support both Japanese and Chinese, you may need to use the `xelatex` compiler instead of `pdflatex`. Additionally, you might need to replace the specified fonts.
