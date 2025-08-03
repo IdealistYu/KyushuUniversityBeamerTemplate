@@ -7,22 +7,23 @@
 
 \usepackage{graphicx}
 \usepackage{listings}
-\usepackage{ctex}
 \usepackage[
 	backend=biber,
 	style=verbose,
 	sorting=ynt
 ]{biblatex}
 
-\setmainfont{Hiragino Mincho Pro}
-% Please replace 'Hiragino Mincho Pro' with a font available on your own system.
+\usepackage[UTF8, fontset=none]{ctex}
+\usepackage{fontspec}
+\setCJKmainfont{Noto Serif CJK JP}
+% Please replace 'Noto Serif CJK JP' with a font available on your own system.
 
 \addbibresource{references.bib}
 
 \usetheme{Madrid}
 
 \author[発表者]{発表者}
-\title[Short title]{タイトル}
+\title[短いタイトル]{タイトル}
 
 \setbeamertemplate{navigation symbols}{}
 \titlegraphic{\includegraphics[width=3cm]{resources/KU_jp.png}}
@@ -53,14 +54,14 @@
 	\end{itemize}
   \end{frame}
 
-\begin{frame}{Example slide 1}
+\begin{frame}{例のスライド1}
 We compute the matrix of outputs as\footnote{\cite{vaswaniAttentionAllYou2023}}:
 $$
 	\mathrm{Attention}(Q, K, V) = \mathrm{softmax}(\frac{QK^T}{\sqrt{d_k}})V
 $$
 \end{frame}
 
-\begin{frame}{Example slide 2}
+\begin{frame}{例のスライド2}
 	\begin{table}
 	  \centering
 	  \begin{tabular}{|c|c|c|}
@@ -81,7 +82,7 @@ $$
 \section{Bibliography}
 
 \begin{frame}[t,allowframebreaks]
-\frametitle{Bibliography}
+\frametitle{参考文献}
 \printbibliography
 \end{frame}
 
